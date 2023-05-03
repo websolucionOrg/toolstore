@@ -1,0 +1,89 @@
+@use '../helpers/functions'
+.start
+    background: url(../assets/img/bg-1.jpeg) no-repeat
+    background-size: cover
+    height: 76vh
+    background-position: center 2%
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 2rem
+    .content
+        transform: translateY(-8rem)
+        text-align: center
+        h1, p, a
+            color: #fff
+            font-weight: bold
+            text-shadow: 1px 1px 1px #111
+            font-style: italic
+        h1
+            font-size: 7.5rem
+            @include functions.responsive(789px)
+               font-size: 4.5rem
+        p
+            font-size: 2rem
+            margin: 1rem 0
+
+
+.services
+    margin-top: 2rem
+    .container
+        margin: 0 auto
+        max-width: 800px
+        width: 100%
+        .box
+            padding: 1.5rem
+            background: #fc4946
+            border-radius: .4rem
+            box-shadow: 1px 1px 3px 1px #11111169
+            h2
+                font-size: 1.8rem
+                color: #fff
+            .border-bottom
+                height: 0.1rem
+                background: #fff
+                margin: 0.6rem 0
+            p
+                margin: 0.9rem 0
+                font-size: 1.4rem
+
+    
+.depoiment
+    background: url(../assets/img/bg-3.jpg) no-repeat
+    background-size: cover
+    background-position: center 2%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 3rem
+    h2, h3, p
+        color: #fff
+    .descH2
+        text-align: center
+        h2
+            font-size: 5.4rem
+            margin-bottom: 1.6rem
+        p
+            font-size: 1.7rem
+    .container
+        width: 100%
+        max-width: 1033px
+        margin: 0 auto
+        .box
+            border: .2rem solid #FC4A46
+            box-shadow: 1px 1px 3px 1px #11111169
+            padding: 4rem 2rem
+            display: flex
+            gap: 1rem
+            flex-direction: column
+            .avatar
+                height: 60px
+                width: 60px
+                background: #fc4a46
+                border-radius: 50%
+                overflow: hidden
+                border: .2rem solid #FC4A46
+            p,h3
+                font-size: 1.6rem
+            
